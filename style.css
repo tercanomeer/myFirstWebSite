@@ -16,7 +16,12 @@ body {
     background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     font-family: Montserrat;
 }
@@ -29,7 +34,7 @@ ul {
     list-style: none;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 256px;
     height: auto;
 }
@@ -64,6 +69,7 @@ nav {
     color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    z-index: 500;
 }
 
 #logo-box {
@@ -98,23 +104,23 @@ nav {
 
 }
 
-#nav-links .nav-link:hover{
+#nav-links .nav-link:hover {
     color: #1ABC9B;
 }
 
-header{
+header {
     background-color: #1ABC9B;
     height: 700px;
     padding-top: calc(106px + 7rem);
     text-align: center;
 }
 
-header h1{
+header h1 {
     color: #fff;
     font-size: 6rem;
 }
 
-header h2{
+header h2 {
     color: #fff;
     font-size: 2.4rem;
     font-family: "Lato";
@@ -122,9 +128,18 @@ header h2{
 
 }
 
-.star-light{
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-dark {
+    color: #2D3D4F;
+}
+
+.star-light,
+.star-dark {
     border: none;
-    border-top: 0.4rem solid #fff;
+    border-top: 0.4rem solid;
     border-radius: 10px;
     max-width: 25rem;
     margin: 2.5rem auto;
@@ -132,13 +147,50 @@ header h2{
     height: 0;
 }
 
-.star-light::after{
-    content: "\2605";
+.star-light::after {
     color: #fff;
+    background-color: #1ABC9B;
+}
+
+.star-dark::after {
+    color: #2D3D4F;
+    background-color: #fff;
+}
+
+.star-light::after,
+.star-dark::after {
+    content: "\2605";
     font-weight: 900;
     font-size: 3.2rem;
     position: relative;
     top: -28px;
     padding: 0 8px;
-    background-color: #1ABC9B;
 }
+
+/*Portfolio*/
+
+#portfolio {
+    height: 600px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 4.8rem;
+    color: #2D3D4F;
+}
+
+.img-fluid-p {
+    max-width: 100%;
+    height: auto;
+}
+
+.col {
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+
+}
+
+.portfolio-item {}
